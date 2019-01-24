@@ -80,12 +80,14 @@ set_from_resource $darkcyan	color6  #000000
 set_from_resource $cyan		color14 #000000
 set_from_resource $darkwhite	color7  #000000
 set_from_resource $white	color15 #000000
+set_from_resource $mint		color16 #000000
+set_from_resource $grey		color17 #000000
 set $transparent		#00000000
 
 #                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
-client.focused		$red		$red		$magenta	$darkmagenta		$darkblue
-client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
-client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
+client.focused		$mint		$mint		$magenta	$darkmagenta		$mint
+client.unfocused	$transparent	$mint		$white		$darkblue		$grey
+client.focused_inactive	$transparent	$mint		$white		$darkblue		$grey
 client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
 
@@ -93,12 +95,13 @@ bar {
 #	font pango:UbuntuMono Nerd Font 14
 	font pango:Terminus Re33 14
 	colors {
-			background $darkblack
-			statusline $darkwhite
+			background $grey
+			statusline $mint
 			separator $cyan
-			focused_workspace  $blue $darkblue $darkblack
-        		active_workspace   $blue $blue $darkwhite
-      			inactive_workspace $darkblack $darkblack $white
+#					   border background text
+			focused_workspace  $mint $darkblack $mint
+        		active_workspace   $mint $darkcyan $mint
+      			inactive_workspace $grey $darkblack $mint
         		urgent_workspace   $darkblack $darkblack $white
 		}
 	status_command i3blocks

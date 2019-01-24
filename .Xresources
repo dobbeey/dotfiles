@@ -15,6 +15,8 @@
 *.color13: #d3869b
 *.color14: #8ec07c
 *.color15: #ebdbb2
+*.color16: #98ff98
+*.color17: #2b2b2b
 !! Transparency (0-255):
 st.alpha: 170
 !! Set a default font and font size as below:
