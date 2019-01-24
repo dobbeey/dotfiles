@@ -91,7 +91,7 @@ client.background $black
 
 bar {
 #	font pango:UbuntuMono Nerd Font 14
-	font pango:URW Gothic 13
+	font pango:Terminus Re33 14
 	colors {
 			background $darkblack
 			statusline $darkwhite

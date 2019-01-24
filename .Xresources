@@ -19,4 +19,5 @@
 st.alpha: 170
 !! Set a default font and font size as below:
 !! *.font: Monospace-14;
-*.font: Source Code Pro-12;
+!!*.font: Monofur Nerd Font Mono-14; ise gute font
+*.font: Terminus Re33-14;
