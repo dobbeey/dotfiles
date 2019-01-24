@@ -86,7 +86,7 @@ set $transparent		#00000000
 
 #                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
 client.focused		$mint		$mint		$magenta	$darkmagenta		$mint
-client.unfocused	$transparent	$mint		$white		$darkblue		$grey
+client.unfocused	$transparent	$mint		$white		$darkbluehttps://www.youtube.com/		$grey
 client.focused_inactive	$transparent	$mint		$white		$darkblue		$grey
 client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
@@ -99,9 +99,9 @@ bar {
 			statusline $mint
 			separator $cyan
 #					   border background text
-			focused_workspace  $mint $darkblack $mint
+			focused_workspace  $mint $grey $mint
         		active_workspace   $mint $darkcyan $mint
-      			inactive_workspace $grey $darkblack $mint
+      			inactive_workspace $grey $grey $mint
         		urgent_workspace   $darkblack $darkblack $white
 		}
 	status_command i3blocks
