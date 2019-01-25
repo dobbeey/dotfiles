@@ -20,8 +20,8 @@
 # #---Basic Definitions---# #
 # Needed for i3-gaps
 for_window [class="^.*"] border pixel 3
-gaps inner 10
-gaps outer 10
+gaps inner 6
+gaps outer 6
 set $term --no-startup-id $TERMINAL
 set $mod Mod1
 set $stoprec --no-startup-id dmenurecord kill
@@ -61,7 +61,11 @@ exec --no-startup-id mpd
 # Podboat automatic queue and download
 exec_always --no-startup-id podentr
 # Set Xonar DGX channel to Multichannel
-exec --no-startup-id amixer -c DGX sset 'Analog Output' 'Stereo Headphones'
+#exec --no-startup-id amixer -c DGX sset 'Analog Output' 'Stereo Headphones'
+# Set mouse speed
+exec --no-startup-id xinput --set-prop 12 'libinput Accel Speed' -0.7
+# Set color scheme
+exec --no-startup-id wal -R
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000
@@ -241,8 +245,8 @@ bindsym $mod+backslash		workspace back_and_forth
 
 set $workspace1  "1"
 set $workspace2  "2"
-set $workspace3  "3"
-set $workspace4  "4"
+set $workspace3  "3"
+set $workspace4  "4"
 set $workspace5  "5"
 set $workspace6  "6"
 set $workspace7  "7"
@@ -253,8 +257,8 @@ set $workspace10 "10"
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -265,8 +269,8 @@ bindsym $mod+0 workspace 10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
